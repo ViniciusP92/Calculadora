@@ -46,49 +46,53 @@ body{
 }
 
 .calculator button {
-    background-color: hsl(30, 25%, 89%);
+    /*Descobrir por que está impactando no código
+    /* background-color: hsl(30, 25%, 89%); */
     color: hsl(223, 31%, 20%);
     padding: 10px 20px;
     border-radius: 10px;
     font-size: 13px;
     outline: none;
     cursor: pointer;
-    border-bottom: 3px solid hsl(28, 16%, 65%);
+    border-bottom: 2px solid hsl(28, 16%, 65%);
     font-family: "League Spartan", sans-serif;
     font-weight: 700;
+    text-align:center;
 }
 
-.backspace{
+#backSpace{
     background: hsl(222, 26%, 31%);
     color:white;
+    border-bottom: 2px solid hsl(224, 28%, 35%);
 }
 
 .botoes-maiores{
-    /* max-width:100%; */
     display: grid;
     grid-gap: 10px;
-    grid-template-columns: 110px 110px;
+    grid-template-columns: 108px 108px;
 
      
 }
 
-.limparDisplay{
-    /* width: 100%; */
+#limparDisplay{
     background-color:hsl(222, 26%, 31%);
     color:white;
-    padding: 10px 50px;
-    justify-content:flex-start;
+    border-bottom: 2px solid hsl(224, 28%, 35%);
 }
 
-.igual{
+#igual{
     padding: 10px 50px;
     background-color:hsl(6, 63%, 50%);
     border: 1px solid hsl(6, 70%, 34%);
     color:white;
-    width:100%;
 }
 
 button:hover{
+    background-color: #FBAB18;
+    color: black;
+}
+
+#limparDisplay:hover , #igual:hover, #backSpace:hover {
     background-color: #FBAB18;
     color: black;
 }
